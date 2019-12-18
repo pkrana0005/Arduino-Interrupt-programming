@@ -6,7 +6,7 @@ void setup() {
  pinMode(intrPin, INPUT_PULLUP);  //INPUT_PULLUP with pinMode() monitors the state of a switch by establishing 
                                   //serial communication between your Arduino and your computer over USB.
  
- attachInterrupt(digitalPinToInterrupt(intrPin), blinks , CHANGE);        //Using Interrupt in 'CHANGE' mode. Interrupt syntax. See references.
+ attachInterrupt(digitalPinToInterrupt(intrPin), blinks , LOW);        //Using Interrupt in 'CHANGE' mode. Interrupt syntax. See references.
 }
 
 void loop() {
